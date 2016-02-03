@@ -13,28 +13,6 @@ function collapseNavbar() {
     }
 }
 
-function copyToClipboard(elementId) {
-
-  // Create a "hidden" input
-  var aux = document.createElement("input");
-
-  // Assign it the value of the specified element
-  aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-
-  // Append it to the body
-  document.body.appendChild(aux);
-
-  // Highlight its content
-  aux.select();
-
-  // Copy the highlighted text
-  document.execCommand("copy");
-
-  // Remove it from the body
-  document.body.removeChild(aux);
-
-}
-
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
@@ -79,7 +57,7 @@ function init() {
         scrollwheel: false,
         draggable: false,
 
-        // How you would like to style the map.
+        // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
         styles: [{
             "featureType": "water",
@@ -191,7 +169,7 @@ function init() {
         }]
     };
 
-    // Get the HTML DOM element that will contain your map
+    // Get the HTML DOM element that will contain your map 
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
